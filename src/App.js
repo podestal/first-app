@@ -1,25 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import Heading from './components/Heading';
+import Main from './components/Main';
+import ModeToggler from './components/ModeToggler';
+import MealsProvider from './provider/MealsProvider';
 
-function App() {
+const Btn = () => {
+
+  const clickHandler = () => {
+    console.log('Clicked!!');
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <button onClick={clickHandler}>Click me</button>
+    // <button onMouseOver={clickHandler}>Click me</button>
+  )
+}
+
+function App(props) {
+  return (
+    // <div>
+    //   <Heading name="Anna" color="purlple"/>
+    //   <Main greet="Howdy"/>
+    //   <p>{props.title}</p>
+    //   <Btn />
+    //   <ModeToggler />
+    // </div>
+    // Context
+    <div>
+      <MealsProvider />
     </div>
-  );
+  )
 }
 
 export default App;
