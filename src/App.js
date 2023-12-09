@@ -4,6 +4,8 @@ import Heading from './components/Heading';
 import Main from './components/Main';
 import ModeToggler from './components/ModeToggler';
 import MealsProvider from './provider/MealsProvider';
+import MealsList from './components/MealsList';
+import Counter from './components/Counter';
 
 const Btn = () => {
 
@@ -28,7 +30,10 @@ function App(props) {
     // </div>
     // Context
     <div>
-      <MealsProvider />
+      <MealsProvider>
+        <MealsList />
+        <Counter />
+      </MealsProvider>
     </div>
   )
 }
