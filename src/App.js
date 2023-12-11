@@ -10,6 +10,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import ListTransformation from './components/ListTransformation';
 import Form from './components/Form';
+import FeedbackForm from './components/FeedbackForm';
 import LowCalorieDesserts from './components/LowCalorieDesserts';
 import { Routes, Route, Link} from 'react-router-dom'
 
@@ -56,7 +57,8 @@ function App(props) {
     // </div>
     // <ListTransformation />
     // <LowCalorieDesserts />
-    <Form />
+    // <Form />
+    <FeedbackForm />
   )
 }
 
