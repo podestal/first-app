@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,35 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  line-height: 40px;
+}
+
+.error {
+  color: red;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  border-radius: 5px;
+  height: 30px;
+}
+
+button {
+  margin-top: 35px;
+  color: white;
+  background-color: darkblue;
+  border: none;
+  border-radius: 10px;
+  width: 20%;
+  height: 3rem;
+  font-size: 1.5rem;
 }
