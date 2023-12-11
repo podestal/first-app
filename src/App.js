@@ -6,6 +6,10 @@ import ModeToggler from './components/ModeToggler';
 import MealsProvider from './provider/MealsProvider';
 import MealsList from './components/MealsList';
 import Counter from './components/Counter';
+import Home from './pages/Home'
+import About from './pages/About'
+import ListTransformation from './components/ListTransformation';
+import { Routes, Route, Link} from 'react-router-dom'
 
 const Btn = () => {
 
@@ -29,12 +33,26 @@ function App(props) {
     //   <ModeToggler />
     // </div>
     // Context
-    <div>
-      <MealsProvider>
-        <MealsList />
-        <Counter />
-      </MealsProvider>
-    </div>
+    // <div>
+    //   <MealsProvider>
+    //     <MealsList />
+    //     <Counter />
+    //   </MealsProvider>
+    // </div>
+    // router
+    // <div>
+    //   <nav className='nav'>
+    //     {/* <a href='#'>Home Page</a>
+    //     <a href='#'>About Page</a> */}
+    //     <Link to="/">Home Page</Link>
+    //     <Link to="/about">About Page</Link>
+    //   </nav>
+    //   <Routes>
+    //     <Route path="/" element={<Home />}/>
+    //     <Route path="/about" element={<About />}/>
+    //   </Routes>
+    // </div>
+    <ListTransformation />
   )
 }
 
