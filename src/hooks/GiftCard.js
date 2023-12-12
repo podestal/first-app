@@ -9,7 +9,12 @@ const GiftCard = () => {
     })
 
     const handleUseGiftCard = () => {
-        setCard({...card, used: true})
+        setCard(prevState => {
+            return {
+                ...prevState,
+                used: true
+            }
+        })
     }
 
     return (
