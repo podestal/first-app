@@ -15,6 +15,8 @@ import SignupForm from './components/SignupForm';
 import LowCalorieDesserts from './components/LowCalorieDesserts';
 import { Routes, Route, Link} from 'react-router-dom'
 import { useUser } from './context/UserContext';
+import UseStateHook from './hooks/UseStateHook';
+import LittleLemonGoals from './components/LittleLemonGoals';
 
 const Btn = () => {
 
@@ -73,7 +75,9 @@ function App(props) {
     // <Form />
     // <FeedbackForm />
     // <SignupForm />
-    <LoggedInUser />
+    // <LoggedInUser />
+    // <UseStateHook />
+    <LittleLemonGoals />
   )
 }
 
