@@ -14,6 +14,7 @@ import FeedbackForm from './components/FeedbackForm';
 import SignupForm from './components/SignupForm';
 import LowCalorieDesserts from './components/LowCalorieDesserts';
 import { Routes, Route, Link} from 'react-router-dom'
+import { useUser } from './context/UserContext';
 
 const Btn = () => {
 
@@ -24,6 +25,17 @@ const Btn = () => {
   return (
     <button onClick={clickHandler}>Click me</button>
     // <button onMouseOver={clickHandler}>Click me</button>
+  )
+}
+
+const LoggedInUser = () => {
+
+  const {user} = useUser();
+
+  return (
+    <p>
+      Hello {user.name}
+    </p>
   )
 }
 
@@ -60,7 +72,8 @@ function App(props) {
     // <LowCalorieDesserts />
     // <Form />
     // <FeedbackForm />
-    <SignupForm />
+    // <SignupForm />
+    <LoggedInUser />
   )
 }
 
