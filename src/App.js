@@ -15,9 +15,10 @@ import SignupForm from './components/SignupForm';
 import LowCalorieDesserts from './components/LowCalorieDesserts';
 import { Routes, Route, Link} from 'react-router-dom'
 import { useUser } from './context/UserContext';
-import UseStateHook from './hooks/UseStateHook';
-import GiftCard from './hooks/GiftCard';
-import LittleLemonGoals from './hooks/LittleLemonGoals';
+import UseStateHook from './hooks/useState/UseStateHook';
+import GiftCard from './hooks/useState/GiftCard';
+import LittleLemonGoals from './hooks/useState/LittleLemonGoals';
+import ToggleEffect from './hooks/useEffect/ToggleEffect';
 
 const Btn = () => {
 
@@ -79,7 +80,8 @@ function App(props) {
     // <LoggedInUser />
     // <UseStateHook />
     // <LittleLemonGoals />
-    <GiftCard />
+    // <GiftCard />
+    <ToggleEffect />
   )
 }
 
