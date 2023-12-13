@@ -23,6 +23,7 @@ import DataFetch from './hooks/useEffect/DataFetch';
 import UserData from './hooks/useEffect/UserData';
 import UseReducerBasics from './hooks/useReducer/UseReducerBasics';
 import CounterAppReducer from './hooks/useReducer/CounterAppReducer';
+import TodosReducer from './hooks/useReducer/TodosReducer';
 
 const Btn = () => {
 
@@ -89,7 +90,8 @@ function App(props) {
     // <DataFetch />
     // <UserData />
     // <UseReducerBasics />
-    <CounterAppReducer />
+    // <CounterAppReducer />
+    <TodosReducer />
   )
 }
 
