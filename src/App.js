@@ -22,7 +22,7 @@ import ToggleEffect from './hooks/useEffect/ToggleEffect';
 import DataFetch from './hooks/useEffect/DataFetch';
 import UserData from './hooks/useEffect/UserData';
 import UseReducerBasics from './hooks/useReducer/UseReducerBasics';
-
+import CounterAppReducer from './hooks/useReducer/CounterAppReducer';
 
 const Btn = () => {
 
@@ -88,7 +88,8 @@ function App(props) {
     // <ToggleEffect />
     // <DataFetch />
     // <UserData />
-    <UseReducerBasics />
+    // <UseReducerBasics />
+    <CounterAppReducer />
   )
 }
 
