@@ -19,6 +19,7 @@ import UseStateHook from './hooks/useState/UseStateHook';
 import GiftCard from './hooks/useState/GiftCard';
 import LittleLemonGoals from './hooks/useState/LittleLemonGoals';
 import ToggleEffect from './hooks/useEffect/ToggleEffect';
+import DataFetch from './hooks/useEffect/DataFetch';
 
 const Btn = () => {
 
@@ -81,7 +82,8 @@ function App(props) {
     // <UseStateHook />
     // <LittleLemonGoals />
     // <GiftCard />
-    <ToggleEffect />
+    // <ToggleEffect />
+    <DataFetch />
   )
 }
 
