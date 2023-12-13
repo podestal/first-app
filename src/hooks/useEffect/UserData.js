@@ -16,6 +16,7 @@ const UserData = () => {
 
     return Object.keys(user).length > 0 ? (
         <div>
+            {console.log("objects keys", Object.keys(user))}
             <h1>Customer Data</h1>
             <h2>Name: {user.results[0].name.first}</h2>
             <img src={user.results[0].picture.large} alt="user-pic"/>
